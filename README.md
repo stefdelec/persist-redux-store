@@ -1,6 +1,9 @@
-# What is persist-redux-store
+# What is persist-redux-store ?
 
 ``persist-redux-store`` is a very simple and basic tool to persist store at initialisation. It is as simple as you could just copy past its index.js's code instead of adding the npm package.
+
+# What it does ?
+I persist your redux store over user session, storing it into localStorage
 
 # How to use it ?
 
