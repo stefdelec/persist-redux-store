@@ -20,10 +20,8 @@ import {defaultStater} from "../index";
 
 const [initialState,saveDate]=defaultStater(0,'counterReducer');
 
+// Depending on previous user action, initialState may be 0 or another value. You reducer will have this value as initial state.
 function counter(state=initialState, action) {
-    if (typeof state === 'undefined') {
-        state = 0 // If state is undefined, initialize it with a default value
-    }
     if (action.type === 'INCREMENT') {
         return state + 1;
     } else if (action.type === 'DECREMENT') {
